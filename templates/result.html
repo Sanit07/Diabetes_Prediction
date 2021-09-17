@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Diabetes Prediction
+        </title>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </head>
+<style>
+    body{
+        background-image: url("{{ url_for('static', filename='icon.jpg') }}"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main{
+        text-align: center;
+        text-decoration: azure;
+        width: 50%;
+        margin: 5em    25%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        color: #ffbf01;
+        border-style: double;
+        border-radius: 10%;
+    }
+    .content{
+        margin: 0 20%;
+        font-size:25px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="main lg-12 md-4 sm-1">
+        <div class="content">
+        {{ Prediction}}
+        <br>
+        <br>
+        <a href="{{ url_for('home') }}"><button type="" class="btn btn-info btn-lg ">Home</button></a>
+    </div>
+
+
+
+
+
+</body>
+</html>
